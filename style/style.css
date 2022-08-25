@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    cursor: url(./../images/cursor.png), auto !important;
 }
 
 html {
@@ -16,6 +17,7 @@ html {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer !important;
 }
 
 button {
@@ -205,6 +207,14 @@ main > section {
     padding: 2rem;
 }
 
+.project > article {
+    height: 100%;
+}
+
+.project > article > .project_list_wrap {
+    height: 100%;
+}
+
 .project > h2 {
     font-size: 4rem;
     margin: 7rem auto 0 3.6rem;
@@ -240,37 +250,93 @@ main > section {
 }
 
 .zishen {
-    top: 10%;
-    left: 42%;
+    top: 12%;
+    left: 46%;
 }
 
 .vogue {
-    top: 28%;
+    top: 30%;
     left: 14%;
 }
 
 .cj_one {
-    top: 40%;
-    left: 42%;
+    top: 42%;
+    left: 46%;
 }
 
 .apple {
-    top: 58%;
+    top: 60%;
     left: 14%;
 }
 
 .hollys_coffee {
-    top: 74%;
-    left: 42%;
+    top: 76%;
+    left: 46%;
 }
 
 .dabang {
-    top: 84%;
+    top: 86%;
     left: 14%;
 }
 
 .description_wrap {
     display: none;
+}
+
+.project_list_wrap > li:hover > .description_wrap  {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 95%;
+    min-width: 230px;
+    background-color: #555;
+    border-radius: 10px;
+    padding: 2rem 1.5rem 4.5rem;
+    color: #fff;
+    z-index: 999;
+}
+
+.project_list_wrap > li:hover > .description_wrap.hollys {
+    top: -100%;
+}
+
+.project_list_wrap > li:hover > .description_wrap.dabang {
+    top: -200%
+}
+
+.project_list_wrap > li:hover > .description_wrap > h3 {
+    margin-bottom: 1rem;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.project_list_wrap > li:hover > .description_wrap > p {
+    font-size: 1.3rem;
+}
+
+.project_list_wrap > li:hover > .description_wrap > img {
+    display: block;
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+.project_list_wrap > li:hover > .description_wrap > ul > li {
+    margin-left: 2rem;
+    list-style: circle !important;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.project_list_wrap > li:hover > .description_wrap > a {
+    position: absolute;
+    right: 6%;
+    bottom: 4%;
+    display: block;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
 }
 
 /* 기록, 콘택트 공통 */
@@ -334,10 +400,6 @@ section.contact > h2 {
 .record_list_wrap > li > div:first-of-type  > img {
     display: block;
     width: 100%;
-}
-
-.record_list_wrap > li > h3 {
-    /* width: 100%; */
 }
 
 /* .record_list_wrap > li > .web {

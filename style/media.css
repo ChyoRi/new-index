@@ -1,0 +1,281 @@
+
+/* PC 1024 */
+@media (max-width: 1024px) {
+
+  html {
+    font-size: 8px;
+  }
+
+  /* 표지 */
+  
+  .cover > p  {
+    right: -8%;
+  }
+
+  /* 프로필 */
+
+  .profile > .img_wrap {
+    max-width: 145px;
+  }
+
+  /* 프로젝트 */
+
+  .zishen {
+    top: 12%;
+    left: 48%;
+  }
+
+  .vogue {
+      top: 30%;
+      left: 14%;
+  }
+
+  .cj_one {
+      top: 42%;
+      left: 48%;
+  }
+
+  .apple {
+      top: 60%;
+      left: 14%;
+  }
+
+  .hollys_coffee {
+      top: 76%;
+      left: 48%;
+  }
+
+  .dabang {
+      top: 86%;
+      left: 14%;
+  }
+
+  .project_list_wrap > li:hover > .description_wrap  {
+    min-width: 170px;
+    padding: 2rem 1.5rem 4.5rem;
+  }
+  
+
+  /* 기록 */
+
+  .record > article {
+    max-width: 715px;
+  }
+  
+
+  .record_list_wrap > li {
+    width: 16%;
+    min-width: 115px;
+  }
+
+  .record_list_wrap > li > h3 {
+    font-size: 1.4rem;
+    min-height: 55px;
+    white-space: nowrap;
+  }
+
+  /* 콘택트 */ 
+
+  #mailForm > textarea {
+    width: 46%;
+  }
+
+  /* aside */
+
+  aside {
+    right: -11%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  html {
+    font-size: 6px;
+  }
+
+  /* 표지 */
+  
+  .cover > p  {
+    right: -6%;
+    font-size: 3rem;
+  }
+
+  .scroll_down_wrap > span {
+    font-size: 2.2rem;
+  }
+
+  /* 프로필 */
+
+  .content_wrap {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .profile > .img_wrap {
+    margin: 0 auto;
+    max-width: 125px;
+  }
+
+  .profile > .img_wrap > img {
+    margin: 0;
+  }
+
+  .content_wrap > section {
+    width: 100% !important;
+    margin: 0 0 5rem 0 !important;
+  }
+
+  .content_wrap > section > h3 {
+    font-size: 3.2rem;
+  }
+
+  .content_wrap > .intro, .license  {
+    border-right: 0;
+  }
+
+  .content_wrap > .license, .skill {
+    margin-top: 0;
+  }
+
+  .content_wrap > .education, .skill {
+    width: 40%;
+  }
+
+  .content_wrap > section > ul > li {
+    font-size: 2.3rem;
+  }
+
+  .content_wrap > .education > ul > li > span  {
+    font-size: 2.3rem;
+  }
+
+  .skill_wrap {
+    justify-content: center;
+  }
+
+  .skill_wrap > li {
+    max-width: 85px !important;
+  }
+
+  /* 프로젝트 */
+
+  .project > h2 {
+    font-size: 4.8rem;
+  }
+
+  .zishen {
+    top: 12%;
+    left: 56%;
+  }
+
+  .vogue {
+    top: 30%;
+    left: 16%;
+  }
+
+  .cj_one {
+    top: 42%;
+    left: 56%;
+  }
+
+  .apple {
+    top: 60%;
+    left: 16%;
+  }
+
+  .hollys_coffee {
+    top: 76%;
+    left: 56%;
+  }
+
+  .dabang {
+    top: 86%;
+    left: 16%;
+  }
+
+  .project_list_wrap > li > h4 {
+    font-size: 2rem;
+  }
+
+  .project_list_wrap > li:hover > .description_wrap  {
+    min-width: 130px;
+    padding: 2rem 1.5rem 6rem;
+  }
+
+  .project_list_wrap > li:hover > .description_wrap > h3 {
+    font-size: 3rem;
+  }
+
+  /* 기록, 콘택트 공통 */
+
+  section.record > h2 {
+    top: 2% !important; 
+    left: 50%;
+    font-size: 5.2rem;
+    transform: translateX(-50%);
+  }
+
+  /* 기록 */
+
+  .record > article {
+    max-width: 715px;
+  }
+
+  .record_list_wrap {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+  }
+
+  .record_list_wrap > li {
+    min-width: 165px;
+  }
+
+  .record_list_wrap > li:nth-of-type(4n) {
+    margin-right: 0 !important;
+  }
+
+  .record_list_wrap > li:nth-child(4) ~ li {
+    margin: 0 !important;
+  }
+
+  .record_list_wrap > li > h3 {
+    font-size: 2rem;
+  }
+
+  /* 콘택트 */ 
+
+  section.contact > h2 {
+    top: 5%;
+    left: 50%;
+    font-size: 5.2rem;
+    transform: translateX(-50%);
+  }
+
+  #mailForm > input {
+    font-size: 2.4rem;
+  }
+
+  #mailForm > textarea {
+    width: 60%;
+    margin-top: 5rem;
+    font-size: 2.6rem;
+  }
+
+  #mailForm > button {
+    margin-top: 5rem;
+    padding: 1rem 5rem;
+    font-size: 2rem;
+  }
+
+  /* aside */
+
+  aside {
+    right: -15%;
+  }
+
+}
