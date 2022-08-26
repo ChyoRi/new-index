@@ -55,11 +55,11 @@ main > section {
 
 .cover > p {
     position: absolute;
-    top: 20%;
-    right: -4%;
+    top: 14%;
+    right: 1rem;
     font-size: 2.5rem;
     color: #fff;
-    transform: rotate(90deg);
+    writing-mode: vertical-lr;
 }
 
 .scroll_down_wrap {
@@ -251,7 +251,7 @@ main > section {
 
 .zishen {
     top: 12%;
-    left: 46%;
+    left: 52%;
 }
 
 .vogue {
@@ -261,7 +261,7 @@ main > section {
 
 .cj_one {
     top: 42%;
-    left: 46%;
+    left: 52%;
 }
 
 .apple {
@@ -271,7 +271,7 @@ main > section {
 
 .hollys_coffee {
     top: 76%;
-    left: 46%;
+    left: 52%;
 }
 
 .dabang {
@@ -288,7 +288,7 @@ main > section {
     position: absolute;
     top: 0;
     left: 95%;
-    min-width: 230px;
+    min-width: 200px;
     background-color: #555;
     border-radius: 10px;
     padding: 2rem 1.5rem 4.5rem;
@@ -356,121 +356,66 @@ section.contact > h2 {
 
 .record {
     position: relative;
-}
-
-.record > article {
-    max-width: 1430px;
-    padding: 9rem 2rem;;
-    height: 100%;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10rem;
 }
 
 .record_list_wrap {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
+    width: 100%;
+    max-width: 1250px;
     height: 100%;
-    padding: 2.5rem;
+    margin: 0 auto;
 }
 
-.record_list_wrap > li {
+.record_list_wrap li {
     position: relative;
-    width: 18%;
-    min-width: 165px;
-    margin-right: 7.5rem;
-    border: 2px solid #fff;
+    width: 17%;
+    margin: 7.5rem 2rem;
+    text-align: center;
+    border: 1px solid #fff;
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
 }
 
-.record_list_wrap > li:nth-of-type(4n) {
-    margin-right: 0;
-}
-
-.record_list_wrap > li:nth-child(4) ~ li {
-    margin-top: 12rem;
-}
-
-/* .record_list_wrap > li > div:first-of-type {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
-
-.record_list_wrap > li > div:first-of-type  > img {
-    display: block;
-    width: 100%;
-}
-
-/* .record_list_wrap > li > .web {
-    background-image: url('../images/w3c.png');
-}
-
-.record_list_wrap > li  > .responesive {
-    background-image: url('../images/css.png');
-}
-
-.record_list_wrap > li  > .sass {
-    background-image: url('../images/scss.png');
-}
-
-.record_list_wrap > li  > .git {
-    background-image: url('../images/git.png');
-}
-
-.record_list_wrap > li  > .js {
-    background-image: url('../images/js.png');
-}
-
-.record_list_wrap > li  > .vue {
-    background-image: url('../images/vue.png');
-}
-
-.record_list_wrap > li  > .front {
-    background-image: url('../images/fe.png');
-}
-
-.record_list_wrap > li  > .webpack {
-    background-image: url('../images/webpack.png');
-} */
-
-.record_list_wrap > li > h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 80px;
-    font-size: 1.6rem;
+.record_list_wrap li > h3 {
+    padding: 3rem 0;
+    font-size: 1.3rem;
     color: #fff;
+    white-space: nowrap;
 }
 
-.record_list_wrap > li > .detail {
+.record_list_wrap li img {
+    max-width: 100%;
+}
+
+.record_list_wrap li .detail {
+    position: absolute;
+    left: 0;
+    top: 0;
     display: none;
-}
-
-.record_list_wrap > li:hover > .detail {
-    display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00000090;
+    background: rgba(0,0,0,.7);
 }
 
-.record_list_wrap > li > .detail > a {
+.record_list_wrap li .detail > a {
     display: block;
     padding: 0.4rem 2rem;
     font-size: 1.6rem;
-    border: 0;
-    text-align: center;
     color: #000;
-    background-color: #fff;
+    background: #fff;    
 }
 
-.record_list_wrap > li > .detail > a:hover {
-    background-color: #ccc;
+.record_list_wrap li:hover .detail {
+    display: flex;
 }
 
 /* 콘택트 */
@@ -540,14 +485,14 @@ section.contact > h2 {
 aside {
     position: fixed;
     top: 50%;
-    right: -4%;
-    width: 105px;
-    min-width: 105px;
+    right: 2rem;
+    width: auto;
     transform: translateY(-50%);
+    z-index: 9999;
 }
 
 aside > ul > li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 aside > ul > li:first-of-type > button {

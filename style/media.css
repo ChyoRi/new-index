@@ -1,15 +1,10 @@
 
 /* PC 1024 */
+
 @media (max-width: 1024px) {
 
   html {
     font-size: 8px;
-  }
-
-  /* 표지 */
-  
-  .cover > p  {
-    right: -8%;
   }
 
   /* 프로필 */
@@ -22,7 +17,7 @@
 
   .zishen {
     top: 12%;
-    left: 48%;
+    left: 52%;
   }
 
   .vogue {
@@ -32,7 +27,7 @@
 
   .cj_one {
       top: 42%;
-      left: 48%;
+      left: 52%;
   }
 
   .apple {
@@ -42,7 +37,7 @@
 
   .hollys_coffee {
       top: 76%;
-      left: 48%;
+      left: 52%;
   }
 
   .dabang {
@@ -52,27 +47,21 @@
 
   .project_list_wrap > li:hover > .description_wrap  {
     min-width: 170px;
-    padding: 2rem 1.5rem 4.5rem;
+    padding: 2rem 1.5rem 5rem;
   }
-  
+
+  .project_list_wrap > li:hover > .description_wrap > a {
+    padding: 0.4rem 0.8rem;
+  }
 
   /* 기록 */
 
-  .record > article {
-    max-width: 715px;
-  }
-  
-
-  .record_list_wrap > li {
-    width: 16%;
-    min-width: 115px;
-  }
-
   .record_list_wrap > li > h3 {
-    font-size: 1.4rem;
-    min-height: 55px;
+    font-size: 1rem;
+    padding: 2rem 0;
     white-space: nowrap;
   }
+  
 
   /* 콘택트 */ 
 
@@ -80,13 +69,9 @@
     width: 46%;
   }
 
-  /* aside */
-
-  aside {
-    right: -11%;
-  }
-
 }
+
+/* 테블릿 */
 
 @media (max-width: 768px) {
 
@@ -97,7 +82,6 @@
   /* 표지 */
   
   .cover > p  {
-    right: -6%;
     font-size: 3rem;
   }
 
@@ -106,6 +90,14 @@
   }
 
   /* 프로필 */
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
   .content_wrap {
     flex-direction: column;
@@ -221,30 +213,17 @@
 
   /* 기록 */
 
-  .record > article {
-    max-width: 715px;
-  }
+  .record {
+    padding: 0 28rem;
+  }    
 
-  .record_list_wrap {
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-around;
-  }
+  .record_list_wrap li {
+      width: 34%;
+      margin: 2.5rem 0;
+  }    
 
-  .record_list_wrap > li {
-    min-width: 165px;
-  }
-
-  .record_list_wrap > li:nth-of-type(4n) {
-    margin-right: 0 !important;
-  }
-
-  .record_list_wrap > li:nth-child(4) ~ li {
-    margin: 0 !important;
-  }
-
-  .record_list_wrap > li > h3 {
-    font-size: 2rem;
+  .record_list_wrap li > h3 {
+      font-size: 2.6rem;
   }
 
   /* 콘택트 */ 
@@ -272,10 +251,245 @@
     font-size: 2rem;
   }
 
-  /* aside */
 
-  aside {
-    right: -15%;
+}
+
+
+@media (max-width: 768px) and (min-width: 680px) {
+
+  .record {
+    padding: 0 20rem;
+  }
+
+}
+
+/* 프로젝트 페이지, 기록 페이지 따로 */
+
+@media (max-width: 768px) and (min-width: 640px) {
+
+  .project_list_wrap > li:hover > .description_wrap {
+    width: 26rem;
+    padding: 2rem 2rem 6.5rem;
+  }
+
+  .record {
+    padding: 0 22rem;
+  }
+
+  .record_list_wrap li {
+    width: 34%;
+    margin: 3.5rem 0;
+  }
+
+  .record_list_wrap li > h3 {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .record {
+    padding: 0 12rem;
+  }
+
+  .record_list_wrap li {
+    width: 38%;
+    margin: 3.5rem 0;
+  }    
+
+  .record_list_wrap li > h3 {
+    font-size: 1.9rem;
+  }
+
+}
+
+
+/* 기록 부분 따로 */
+
+@media (max-width: 540px) {
+
+  .record {
+    padding: 0 6rem;
+  }
+
+  .record_list_wrap li > h3 {
+      font-size: 2rem;
+  }
+  
+}
+
+/* 모바일 */
+
+@media (max-width: 480px) {
+
+  html {
+    font-size: 4px;
+  }
+
+  /* 표지 */
+
+  .cover > h1 {
+    font-size: 4rem;
+  }
+  
+  .cover > p  {
+    font-size: 3.5rem;
+  }
+
+  .scroll_down_wrap > span {
+    font-size: 2.6rem;
+  }
+
+  /* 프로필 */
+
+  .profile > .img_wrap {
+    max-width: 100px;
+  }
+
+  /* 프로젝트 */
+
+  .project > h2 {
+    font-size: 7rem;
+  }
+
+  .project_list_wrap > li > h4 {
+    font-size: 3rem;
+  }
+
+  .zishen {
+    top: 12%;
+    left: 58%;
+  }
+
+  .vogue {
+    top: 30%;
+    left: 14%;
+  }
+
+  .cj_one {
+    top: 42%;
+    left: 58%;
+  }
+
+  .apple {
+    top: 60%;
+    left: 14%;
+  }
+
+  .hollys_coffee {
+    top: 76%;
+    left: 58%;
+  }
+
+  .dabang {
+    top: 86%;
+    left: 14%;
+  }
+
+  .project_list_wrap > li:hover > .description_wrap {
+    padding: 3rem 2.5rem 9rem;
+  }
+
+  .project_list_wrap > li:hover > .description_wrap > h3 {
+    font-size: 4.5rem;
+  }
+
+  .project_list_wrap > li:hover > .description_wrap.dabang {
+    top: -350%;
+  }
+
+  /* 기록, 콘텐트 공통 */
+
+  section.record > h2,
+  section.contact > h2 {
+    font-size: 8rem;
+  }
+
+  /* 기록 */
+
+  .record {
+    padding: 0 3rem;
+  }
+
+  .record_list_wrap li {
+    margin: 7.5rem 0;
+  } 
+
+  .record_list_wrap li > h3 {
+    font-size: 2.8rem;
+  }
+
+  /* 콘택트 */
+
+  #mailForm > input {
+    font-size: 3.5rem;
+  }
+
+  #mailForm > textarea {
+    width: 80%;
+    font-size: 3.5rem;
+  }
+
+  #mailForm > button {
+    padding: 2rem 8rem;
+  }
+  
+  /* aside */ 
+
+  aside > ul > li {
+    margin-bottom: 1.8rem;
+  }
+
+}
+
+/* 작은 모바일 프로젝트 따로 */
+
+@media (max-width: 450px) and (min-width: 299px) {
+
+  .zishen {
+    top: 12%;
+    left: 68%;
+  }
+
+  .vogue {
+    top: 30%;
+    left: 14%;
+  }
+
+  .cj_one {
+    top: 42%;
+    left: 68%;
+  }
+
+  .apple {
+    top: 60%;
+    left: 14%;
+  }
+
+  .hollys_coffee {
+    top: 76%;
+    left: 68%;
+  }
+
+  .dabang {
+    top: 86%;
+    left: 14%;
+  }
+
+  .project_list_wrap > li:hover > .description_wrap {
+    left: 100%;
+  }
+
+  .project_list_wrap > li:hover > .description_wrap.zishen,
+  .project_list_wrap > li:hover > .description_wrap.cj_one,
+  .project_list_wrap > li:hover > .description_wrap.hollys {
+    width: 11rem;
+    left: -350%;
+  }
+
+  .record_list_wrap li > h3 {
+    font-size: 1.6rem;
   }
 
 }
